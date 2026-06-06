@@ -1,0 +1,57 @@
+$ErrorActionPreference = "Stop"
+New-Item -ItemType Directory -Force -Path "screenshots" | Out-Null
+
+$overview = @'
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#050812"/>
+  <rect x="48" y="48" width="1184" height="624" rx="28" fill="#0d1727" stroke="#25d7ef" stroke-opacity=".45"/>
+  <text x="96" y="118" fill="#58f0b3" font-family="Consolas, monospace" font-size="22" font-weight="700">GovTech COBOL Modernization Ledger</text>
+  <text x="96" y="214" fill="#f4f1ea" font-family="Georgia, serif" font-size="62" font-weight="700">Legacy systems become visible</text>
+  <text x="96" y="288" fill="#f4f1ea" font-family="Georgia, serif" font-size="62" font-weight="700">before modernization spend moves.</text>
+  <text x="96" y="358" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="28">COBOL cores, Java wrappers, SQL marts, citizen impact,</text>
+  <text x="96" y="398" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="28">batch windows, and audit gaps in one board-readable ledger.</text>
+  <rect x="96" y="480" width="240" height="118" rx="18" fill="#101c30" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="120" y="526" fill="#a8b3c7" font-family="Consolas, monospace" font-size="18">AGGREGATE RISK</text>
+  <text x="120" y="576" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="46" font-weight="800">61.21</text>
+  <rect x="368" y="480" width="240" height="118" rx="18" fill="#101c30" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="392" y="526" fill="#a8b3c7" font-family="Consolas, monospace" font-size="18">URGENT SYSTEMS</text>
+  <text x="392" y="576" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="46" font-weight="800">1</text>
+  <rect x="640" y="480" width="240" height="118" rx="18" fill="#101c30" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="664" y="526" fill="#a8b3c7" font-family="Consolas, monospace" font-size="18">COBOL CORES</text>
+  <text x="664" y="576" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="46" font-weight="800">1</text>
+</svg>
+'@
+
+$ledger = @'
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#050812"/>
+  <text x="64" y="92" fill="#f4f1ea" font-family="Georgia, serif" font-size="58" font-weight="700">Modernization sequence proof</text>
+  <g transform="translate(64 150)">
+    <rect width="360" height="430" rx="22" fill="#0d1727" stroke="#ff6b87" stroke-opacity=".55"/>
+    <text x="28" y="52" fill="#25d7ef" font-family="Consolas, monospace" font-size="18">URGENT</text>
+    <text x="28" y="104" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="30" font-weight="800">benefits-eligibility-mainframe</text>
+    <text x="28" y="166" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="22">COBOL core with high citizen impact,</text>
+    <text x="28" y="200" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="22">long batch windows, and audit gaps.</text>
+    <text x="28" y="292" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="54" font-weight="800">100</text>
+  </g>
+  <g transform="translate(464 150)">
+    <rect width="360" height="430" rx="22" fill="#0d1727" stroke="#ff9f43" stroke-opacity=".45"/>
+    <text x="28" y="52" fill="#25d7ef" font-family="Consolas, monospace" font-size="18">SEQUENCE</text>
+    <text x="28" y="104" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="30" font-weight="800">tax-disbursement-orchestrator</text>
+    <text x="28" y="166" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="22">Java service boundaries carry</text>
+    <text x="28" y="200" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="22">payment exception sequencing.</text>
+    <text x="28" y="292" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="54" font-weight="800">61.2</text>
+  </g>
+  <g transform="translate(864 150)">
+    <rect width="360" height="430" rx="22" fill="#0d1727" stroke="#25d7ef" stroke-opacity=".35"/>
+    <text x="28" y="52" fill="#25d7ef" font-family="Consolas, monospace" font-size="18">READY</text>
+    <text x="28" y="104" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="30" font-weight="800">licensing-renewal-reporting-mart</text>
+    <text x="28" y="166" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="22">SQL mart migration waits behind</text>
+    <text x="28" y="200" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="22">canonical licensing contracts.</text>
+    <text x="28" y="292" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="54" font-weight="800">22.4</text>
+  </g>
+</svg>
+'@
+
+Set-Content -Path "screenshots/01-overview-proof.svg" -Value $overview -Encoding UTF8
+Set-Content -Path "screenshots/02-ledger-proof.svg" -Value $ledger -Encoding UTF8

@@ -1,0 +1,44 @@
+{
+  "estate": "Public benefit, tax, licensing, and permit systems with COBOL cores, Java service wrappers, and SQL reporting marts.",
+  "assets": [
+    {
+      "systemId": "benefits-eligibility-mainframe",
+      "owner": "Department benefits platform",
+      "language": "COBOL",
+      "citizenImpact": 94,
+      "batchWindowHours": 16,
+      "defectBacklog": 21,
+      "auditGaps": 7,
+      "interfaceCount": 14,
+      "dataContractAgeMonths": 38,
+      "fundingReadiness": 42,
+      "nextAction": "Freeze new downstream extracts until eligibility rules, batch cutoffs, and audit evidence are mapped into one modernization packet."
+    },
+    {
+      "systemId": "tax-disbursement-orchestrator",
+      "owner": "Treasury payment services",
+      "language": "Java",
+      "citizenImpact": 78,
+      "batchWindowHours": 5,
+      "defectBacklog": 6,
+      "auditGaps": 2,
+      "interfaceCount": 7,
+      "dataContractAgeMonths": 14,
+      "fundingReadiness": 78,
+      "nextAction": "Route payment exception logic into Java service boundaries before migrating settlement reports."
+    },
+    {
+      "systemId": "licensing-renewal-reporting-mart",
+      "owner": "Citizen services data office",
+      "language": "SQL",
+      "citizenImpact": 66,
+      "batchWindowHours": 3,
+      "defectBacklog": 6,
+      "auditGaps": 2,
+      "interfaceCount": 5,
+      "dataContractAgeMonths": 9,
+      "fundingReadiness": 78,
+      "nextAction": "Keep reporting mart migration sequenced behind canonical permit and licensing data contracts."
+    }
+  ]
+}

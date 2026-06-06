@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#050812"/>
+  <rect x="48" y="48" width="1184" height="624" rx="28" fill="#0d1727" stroke="#25d7ef" stroke-opacity=".45"/>
+  <text x="96" y="118" fill="#58f0b3" font-family="Consolas, monospace" font-size="22" font-weight="700">GovTech COBOL Modernization Ledger</text>
+  <text x="96" y="214" fill="#f4f1ea" font-family="Georgia, serif" font-size="62" font-weight="700">Legacy systems become visible</text>
+  <text x="96" y="288" fill="#f4f1ea" font-family="Georgia, serif" font-size="62" font-weight="700">before modernization spend moves.</text>
+  <text x="96" y="358" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="28">COBOL cores, Java wrappers, SQL marts, citizen impact,</text>
+  <text x="96" y="398" fill="#a8b3c7" font-family="Segoe UI, sans-serif" font-size="28">batch windows, and audit gaps in one board-readable ledger.</text>
+  <rect x="96" y="480" width="240" height="118" rx="18" fill="#101c30" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="120" y="526" fill="#a8b3c7" font-family="Consolas, monospace" font-size="18">AGGREGATE RISK</text>
+  <text x="120" y="576" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="46" font-weight="800">61.21</text>
+  <rect x="368" y="480" width="240" height="118" rx="18" fill="#101c30" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="392" y="526" fill="#a8b3c7" font-family="Consolas, monospace" font-size="18">URGENT SYSTEMS</text>
+  <text x="392" y="576" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="46" font-weight="800">1</text>
+  <rect x="640" y="480" width="240" height="118" rx="18" fill="#101c30" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="664" y="526" fill="#a8b3c7" font-family="Consolas, monospace" font-size="18">COBOL CORES</text>
+  <text x="664" y="576" fill="#f4f1ea" font-family="Segoe UI, sans-serif" font-size="46" font-weight="800">1</text>
+</svg>
